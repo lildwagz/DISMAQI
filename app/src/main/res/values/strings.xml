@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DISMAQI 20.1</string>
+    <string name="banner">Tambah Penilaian</string>
+    <string name="rekap">Rekap Penilaian</string>
+    <string name="ButtonApprove">APPROVE</string>
+    <string name="ButtonRevert">REVERT</string>
+</resources>

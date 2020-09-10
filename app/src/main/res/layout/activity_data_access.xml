@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#E5E9ED"
+    tools:context=".dashboard.DataAccess">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/nightsky"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_gold_medal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/teko_semibold"
+                    android:gravity="center"
+                    android:text="@string/banner"
+                    android:textColor="#FF0000"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/junge"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:text="@string/rekap"
+                        android:textColor="#1E1E1E"
+                        android:textSize="9pt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/Tv_date"
+                            android:layout_margin="5dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8.0dip"
+                            android:text="Rabu , 02 september 2020"
+                            android:textColor="#8F8B8B"
+                            android:textSize="7pt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            />
+
+                        <TextView
+                            android:layout_gravity="end"
+                            android:id="@+id/Tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:paddingLeft="70dp"
+                            android:text="10.20.50"
+                            android:textColor="#8F8B8B"
+                            android:textSize="7pt" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginTop="10dp"
+                                app:cardCornerRadius="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/Ed_Roles"
+                                        android:background="@null"
+                                        android:layout_margin="5dp"
+                                        android:hint="Pilih roles kamu"
+                                        android:textColor="#1E1E1E"
+                                        android:textSize="9pt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginTop="25dp"
+                                app:cardCornerRadius="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/Tv_roles"
+                                        android:textSize="9pt"
+                                        android:text="Guru-021091"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"/>
+
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginTop="25dp"
+                                app:cardCornerRadius="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/Ed_Jenjang"
+                                        android:background="@null"
+                                        android:layout_margin="5dp"
+                                        android:hint="Pilih Jenjang"
+                                        android:textColor="#1E1E1E"
+                                        android:textSize="9pt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginBottom="20dp"
+                                app:cardCornerRadius="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/Ed_Kelas"
+                                        android:background="@null"
+                                        android:layout_margin="5dp"
+                                        android:hint="Pilih Kelas"
+                                        android:textColor="#1E1E1E"
+                                        android:textSize="9pt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginBottom="20dp"
+                                app:cardCornerRadius="7dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_margin="15dp"
+                                    android:layout_width="match_parent"
+                                    android:orientation="vertical"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/Ed_Jurusan"
+                                        android:background="@null"
+                                        android:layout_margin="5dp"
+                                        android:hint="Pilih Jurusan"
+                                        android:textColor="#1E1E1E"
+                                        android:textSize="9pt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        />
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:orientation="horizontal"
+                                        android:layout_height="wrap_content">
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                app:cardCornerRadius="7dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="325dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/Ed_TahunAjaran"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_margin="15dp"
+                                        android:background="@null"
+                                        android:hint="Pilih Tahun Ajaran"
+                                        android:textColor="#1E1E1E"
+                                        android:textSize="9pt" />
+
+                                </LinearLayout>
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/btn_revert"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8.0dip"
+                                android:layout_marginRight="16dp"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_weight="1.0"
+                                android:text="@string/ButtonRevert"
+                                android:theme="@style/ButtonRevert"
+                                android:background="@drawable/btn_revert"
+                                />
+
+                            <Button
+                                android:id="@+id/btn_approve"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8.0dip"
+                                android:layout_marginLeft="16dp"
+                                android:layout_marginTop="8.0dip"
+                                android:layout_weight="1.0"
+                                android:text="@string/ButtonApprove"
+                                android:theme="@style/ButtonRevert"
+                                android:background="@drawable/btn_approve"
+                                />
+
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
